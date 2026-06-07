@@ -25,8 +25,17 @@ jobs:
           dotnet restore
           dotnet build --no-restore --configuration Release
 
-      - name: Test (must pass before release)
-        run: dotnet test --no-build --configuration Release
+      - name: Test Core (must pass before release)
+        run: dotnet test tests/Tempus.Core.Tests/Tempus.Core.Tests.csproj --no-build --configuration Release
+
+      - name: Test Business
+        run: dotnet test tests/Tempus.Business.Tests/Tempus.Business.Tests.csproj --no-build --configuration Release
+
+      - name: Test AspNetCore
+        run: dotnet test tests/Tempus.AspNetCore.Tests/Tempus.AspNetCore.Tests.csproj --no-build --configuration Release
+
+      - name: Test EFCore
+        run: dotnet test tests/Tempus.EFCore.Tests/Tempus.EFCore.Tests.csproj --no-build --configuration Release
 
       - name: Pack
         run: dotnet pack --no-build --configuration Release --output ./artifacts
