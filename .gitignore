@@ -1,0 +1,41 @@
+# Build output
+bin/
+obj/
+artifacts/
+coverage/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+# VS Code
+.vscode/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+
+# Test results
+TestResults/
+**/*.trx
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets (never commit)
+*.pfx
+*.p12
+appsettings.*.json
+!appsettings.json
+!appsettings.Development.json

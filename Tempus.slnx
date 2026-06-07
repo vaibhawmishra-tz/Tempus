@@ -1,0 +1,33 @@
+<Solution>
+  <Folder Name="/samples/">
+    <Project Path="samples/Tempus.Sample.WebApi/Tempus.Sample.WebApi.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/Tempus.Business/Tempus.Business.csproj" />
+    <Project Path="src/Tempus.Core/Tempus.Core.csproj" />
+    <Project Path="src/Tempus.Testing/Tempus.Testing.csproj" />
+  </Folder>
+  <Folder Name="/src/Holidays/">
+    <Project Path="src/Tempus.Holidays/Tempus.Holidays.csproj" />
+    <Project Path="src/Tempus.Holidays.EU/Tempus.Holidays.EU.csproj" />
+    <Project Path="src/Tempus.Holidays.Exchange/Tempus.Holidays.Exchange.csproj" />
+    <Project Path="src/Tempus.Holidays.IN/Tempus.Holidays.IN.csproj" />
+    <Project Path="src/Tempus.Holidays.UK/Tempus.Holidays.UK.csproj" />
+    <Project Path="src/Tempus.Holidays.US/Tempus.Holidays.US.csproj" />
+  </Folder>
+  <Folder Name="/src/Integrations/">
+    <Project Path="src/Tempus.AspNetCore/Tempus.AspNetCore.csproj" />
+    <Project Path="src/Tempus.EFCore/Tempus.EFCore.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Tempus.AspNetCore.Tests/Tempus.AspNetCore.Tests.csproj" />
+    <Project Path="tests/Tempus.Business.Tests/Tempus.Business.Tests.csproj" />
+    <Project Path="tests/Tempus.Core.Tests/Tempus.Core.Tests.csproj" />
+    <Project Path="tests/Tempus.EFCore.Tests/Tempus.EFCore.Tests.csproj" />
+    <Project Path="tests/Tempus.Integration.Tests/Tempus.Integration.Tests.csproj" />
+  </Folder>
+  <Folder Name="/tests/Benchmarks/">
+    <Project Path="tests/Tempus.Business.Benchmarks/Tempus.Business.Benchmarks.csproj" />
+    <Project Path="tests/Tempus.Core.Benchmarks/Tempus.Core.Benchmarks.csproj" />
+  </Folder>
+</Solution>

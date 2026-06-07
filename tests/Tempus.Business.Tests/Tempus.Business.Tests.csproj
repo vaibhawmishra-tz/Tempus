@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio" PrivateAssets="all" />
+    <PackageReference Include="coverlet.collector" PrivateAssets="all" />
+    <PackageReference Include="FluentAssertions" />
+    <PackageReference Include="NSubstitute" />
+    <PackageReference Include="Bogus" />
+    <PackageReference Include="FsCheck.Xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Tempus.Business\Tempus.Business.csproj" />
+    <ProjectReference Include="..\..\src\Tempus.Testing\Tempus.Testing.csproj" />
+    <ProjectReference Include="..\..\src\Tempus.Holidays.US\Tempus.Holidays.US.csproj" />
+    <ProjectReference Include="..\..\src\Tempus.Holidays.UK\Tempus.Holidays.UK.csproj" />
+    <ProjectReference Include="..\..\src\Tempus.Holidays.IN\Tempus.Holidays.IN.csproj" />
+    <ProjectReference Include="..\..\src\Tempus.Holidays.EU\Tempus.Holidays.EU.csproj" />
+    <ProjectReference Include="..\..\src\Tempus.Holidays.Exchange\Tempus.Holidays.Exchange.csproj" />
+    <ProjectReference Include="..\..\src\Tempus.Holidays\Tempus.Holidays.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+    <Using Include="FluentAssertions" />
+  </ItemGroup>
+
+</Project>

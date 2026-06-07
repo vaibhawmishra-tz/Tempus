@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <IsPackable>false</IsPackable>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BenchmarkDotNet" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Tempus.Business\Tempus.Business.csproj" />
+    <ProjectReference Include="..\..\src\Tempus.Holidays\Tempus.Holidays.csproj" />
+    <ProjectReference Include="..\..\src\Tempus.Holidays.US\Tempus.Holidays.US.csproj" />
+  </ItemGroup>
+
+</Project>

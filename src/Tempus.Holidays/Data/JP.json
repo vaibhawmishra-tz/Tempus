@@ -1,0 +1,24 @@
+{
+  "region": "JP",
+  "name": "Japan",
+  "substituteRule": "japan",
+  "rules": [
+    { "name": "New Year's Day",            "type": "fixed",   "month": 1,  "day": 1 },
+    { "name": "Coming of Age Day",         "type": "nth",     "month": 1,  "weekday": "Monday", "n": 2 },
+    { "name": "National Foundation Day",   "type": "fixed",   "month": 2,  "day": 11 },
+    { "name": "Emperor's Birthday",        "type": "fixed",   "month": 2,  "day": 23, "since": 2020 },
+    { "name": "Vernal Equinox Day",        "type": "equinox", "which": "vernal" },
+    { "name": "Showa Day",                 "type": "fixed",   "month": 4,  "day": 29 },
+    { "name": "Constitution Memorial Day", "type": "fixed",   "month": 5,  "day": 3 },
+    { "name": "Greenery Day",              "type": "fixed",   "month": 5,  "day": 4 },
+    { "name": "Children's Day",            "type": "fixed",   "month": 5,  "day": 5 },
+    { "name": "Marine Day",                "type": "nth",     "month": 7,  "weekday": "Monday", "n": 3 },
+    { "name": "Mountain Day",              "type": "fixed",   "month": 8,  "day": 11, "since": 2016 },
+    { "name": "Respect for the Aged Day",  "type": "nth",     "month": 9,  "weekday": "Monday", "n": 3 },
+    { "name": "Autumnal Equinox Day",      "type": "equinox", "which": "autumnal" },
+    { "name": "Sports Day",                "type": "nth",     "month": 10, "weekday": "Monday", "n": 2 },
+    { "name": "Culture Day",               "type": "fixed",   "month": 11, "day": 3 },
+    { "name": "Labour Thanksgiving Day",   "type": "fixed",   "month": 11, "day": 23 },
+    { "name": "Emperor's Birthday",        "type": "fixed",   "month": 12, "day": 23, "until": 2018, "note": "Heisei era — Emperor Akihito" }
+  ]
+}

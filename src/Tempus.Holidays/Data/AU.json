@@ -1,0 +1,14 @@
+{
+  "region": "AU",
+  "name": "Australia (National)",
+  "rules": [
+    { "name": "New Year's Day",    "type": "fixed",  "month": 1,  "day": 1,  "observe": "sat-mon-sun-mon" },
+    { "name": "Australia Day",     "type": "fixed",  "month": 1,  "day": 26, "observe": "sat-mon-sun-mon" },
+    { "name": "Good Friday",       "type": "easter", "offset": -2 },
+    { "name": "Easter Saturday",   "type": "easter", "offset": -1 },
+    { "name": "Easter Monday",     "type": "easter", "offset": 1 },
+    { "name": "Anzac Day",         "type": "fixed",  "month": 4,  "day": 25, "observe": "sat-mon-sun-mon" },
+    { "name": "Christmas Day",     "type": "fixed",  "month": 12, "day": 25, "observe": "sat-mon-sun-mon" },
+    { "name": "Boxing Day",        "type": "boxing-day" }
+  ]
+}

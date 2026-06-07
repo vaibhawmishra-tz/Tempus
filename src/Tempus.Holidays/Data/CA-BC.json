@@ -1,0 +1,17 @@
+{
+  "region": "CA-BC",
+  "name": "Canada — British Columbia",
+  "rules": [
+    { "name": "New Year's Day",                            "type": "fixed",       "month": 1,  "day": 1,  "observe": "sat-mon-sun-mon" },
+    { "name": "Family Day",                                "type": "nth",         "month": 2,  "weekday": "Monday", "n": 3, "since": 2013 },
+    { "name": "Good Friday",                               "type": "easter",      "offset": -2 },
+    { "name": "Victoria Day",                              "type": "last-before", "month": 5,  "day": 25, "weekday": "Monday" },
+    { "name": "Canada Day",                                "type": "fixed",       "month": 7,  "day": 1,  "observe": "sat-mon-sun-mon" },
+    { "name": "BC Day",                                    "type": "nth",         "month": 8,  "weekday": "Monday", "n": 1 },
+    { "name": "Labour Day",                                "type": "nth",         "month": 9,  "weekday": "Monday", "n": 1 },
+    { "name": "National Day for Truth and Reconciliation", "type": "fixed",       "month": 9,  "day": 30, "observe": "sat-mon-sun-mon", "since": 2021 },
+    { "name": "Thanksgiving Day",                          "type": "nth",         "month": 10, "weekday": "Monday", "n": 2 },
+    { "name": "Remembrance Day",                           "type": "fixed",       "month": 11, "day": 11, "observe": "sat-mon-sun-mon" },
+    { "name": "Christmas Day",                             "type": "fixed",       "month": 12, "day": 25, "observe": "sat-mon-sun-mon" }
+  ]
+}

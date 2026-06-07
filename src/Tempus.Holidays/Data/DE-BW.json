@@ -1,0 +1,18 @@
+{
+  "region": "DE-BW",
+  "name": "Germany — Baden-Württemberg",
+  "rules": [
+    { "name": "Neujahr",                   "type": "fixed",  "month": 1,  "day": 1 },
+    { "name": "Heilige Drei Könige",       "type": "fixed",  "month": 1,  "day": 6 },
+    { "name": "Karfreitag",                "type": "easter", "offset": -2 },
+    { "name": "Ostermontag",               "type": "easter", "offset": 1 },
+    { "name": "Tag der Arbeit",            "type": "fixed",  "month": 5,  "day": 1 },
+    { "name": "Christi Himmelfahrt",       "type": "easter", "offset": 39 },
+    { "name": "Pfingstmontag",             "type": "easter", "offset": 50 },
+    { "name": "Fronleichnam",              "type": "easter", "offset": 60 },
+    { "name": "Tag der Deutschen Einheit", "type": "fixed",  "month": 10, "day": 3 },
+    { "name": "Allerheiligen",             "type": "fixed",  "month": 11, "day": 1 },
+    { "name": "1. Weihnachtstag",          "type": "fixed",  "month": 12, "day": 25 },
+    { "name": "2. Weihnachtstag",          "type": "fixed",  "month": 12, "day": 26 }
+  ]
+}

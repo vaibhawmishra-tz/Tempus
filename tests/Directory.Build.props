@@ -1,0 +1,9 @@
+<Project>
+  <!-- Chain into root Directory.Build.props so shared settings (ImplicitUsings, Nullable, etc.) apply here too -->
+  <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />
+
+  <!-- Suppress naming rules that conflict with xUnit test method conventions -->
+  <PropertyGroup>
+    <NoWarn>$(NoWarn);CA1707;CA1515</NoWarn>
+  </PropertyGroup>
+</Project>

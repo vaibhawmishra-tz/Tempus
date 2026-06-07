@@ -1,0 +1,16 @@
+{
+  "region": "AU-WA",
+  "name": "Australia — Western Australia",
+  "rules": [
+    { "name": "New Year's Day",   "type": "fixed",  "month": 1,  "day": 1,  "observe": "sat-mon-sun-mon" },
+    { "name": "Australia Day",    "type": "fixed",  "month": 1,  "day": 26, "observe": "sat-mon-sun-mon" },
+    { "name": "Good Friday",      "type": "easter", "offset": -2 },
+    { "name": "Easter Saturday",  "type": "easter", "offset": -1 },
+    { "name": "Easter Monday",    "type": "easter", "offset": 1 },
+    { "name": "Anzac Day",        "type": "fixed",  "month": 4,  "day": 25, "observe": "sat-mon-sun-mon" },
+    { "name": "WA Day",           "type": "last",   "month": 5,  "weekday": "Monday" },
+    { "name": "King's Birthday",  "type": "nth",    "month": 9,  "weekday": "Monday", "n": 4 },
+    { "name": "Christmas Day",    "type": "fixed",  "month": 12, "day": 25, "observe": "sat-mon-sun-mon" },
+    { "name": "Boxing Day",       "type": "boxing-day" }
+  ]
+}

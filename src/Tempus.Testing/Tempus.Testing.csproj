@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
+    <PackageId>Tempus.Testing</PackageId>
+    <Description>Test helpers for Tempus. Includes FakeClock, FakeBusinessCalendar, controllable time, and Bogus date generators for unit and integration tests.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bogus" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tempus.Core\Tempus.Core.csproj" />
+  </ItemGroup>
+
+</Project>
