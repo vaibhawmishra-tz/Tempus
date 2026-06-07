@@ -31,13 +31,16 @@ jobs:
       - name: Build
         run: dotnet build --no-restore --configuration Release
 
-      - name: Test with coverage
+      - name: Test unit tests (skip integration)
         run: >
-          dotnet test --no-build --configuration Release
+          dotnet test tests/Tempus.Core.Tests/Tempus.Core.Tests.csproj
+          tests/Tempus.Business.Tests/Tempus.Business.Tests.csproj
+          tests/Tempus.AspNetCore.Tests/Tempus.AspNetCore.Tests.csproj
+          tests/Tempus.EFCore.Tests/Tempus.EFCore.Tests.csproj
+          --no-build --configuration Release
           --collect:"XPlat Code Coverage"
           --results-directory ./coverage
           --logger "trx;LogFileName=results.trx"
-          --filter "FullyQualifiedName!=Tempus.Integration.Tests.*"
 
       - name: Upload coverage
         uses: codecov/codecov-action@v4
