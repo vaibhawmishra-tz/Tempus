@@ -529,18 +529,6 @@ public void SlaIsBreached_WhenTargetExceeded()
 
 ---
 
-## Publishing
-
-See [PUBLISHING.md](PUBLISHING.md) for complete instructions on:
-- Setting up your NuGet.org account
-- Configuring API keys
-- Version management and semantic versioning
-- CI/CD automation with GitHub Actions
-- Changelog management
-- Troubleshooting and rollback procedures
-
----
-
 ## Contributing
 
 ### Getting Started
@@ -593,16 +581,6 @@ MIT — see [LICENSE](LICENSE).
 ## Changelog
 
 See [CHANGELOG.md](CHANGELOG.md) for release history and version information.
-
----
-
-## Resources
-
-- **Documentation**: See detailed sections above for each package
-- **Publishing**: [PUBLISHING.md](PUBLISHING.md) — complete guide to NuGet.org publishing
-- **NuGet Package**: https://www.nuget.org/packages/Tempus.Core
-- **Issues**: Report bugs on GitHub Issues
-- **Discussions**: Ask questions on GitHub Discussions
 
 ---
 
