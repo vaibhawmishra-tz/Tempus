@@ -25,7 +25,7 @@
     <RepositoryType>git</RepositoryType>
     <PackageTags>datetime;timezone;dst;utc;business-days;dotnet;csharp</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageIcon>icon.png</PackageIcon>
+    <!-- Icon can be added later: <PackageIcon>icon.png</PackageIcon> -->
 
     <!-- Source Link: enables step-through debugging into Tempus source -->
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
