@@ -13,7 +13,7 @@
     <NoWarn>$(NoWarn);CS1591</NoWarn>
 
     <!-- Version: Update here before each release. Follows semantic versioning (MAJOR.MINOR.PATCH) -->
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
 
     <!-- NuGet metadata shared by all packages -->
     <Authors>Tempus Contributors</Authors>
@@ -34,7 +34,7 @@
     <!-- Symbols: .snupkg published alongside .nupkg -->
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <DebugType>embedded</DebugType>
+    <DebugType>portable</DebugType>
 
     <!-- Reproducible builds -->
     <Deterministic>true</Deterministic>
