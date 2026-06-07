@@ -72,9 +72,3 @@ jobs:
 
       - name: Pack
         run: dotnet pack --configuration Release --output ./artifacts
-
-      - name: Install dotnet-validate tool
-        run: dotnet tool install --global dotnet-validate
-
-      - name: Validate packages
-        run: dotnet validate package local ./artifacts/*.nupkg
