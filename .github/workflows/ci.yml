@@ -37,6 +37,16 @@ jobs:
           --collect:"XPlat Code Coverage"
           --results-directory ./coverage
           --logger "trx;LogFileName=results.trx"
+          --filter "FullyQualifiedName!=Tempus.Integration.Tests.*"
+        if: runner.os == 'Windows'
+
+      - name: Test with coverage (including integration tests)
+        run: >
+          dotnet test --no-build --configuration Release
+          --collect:"XPlat Code Coverage"
+          --results-directory ./coverage
+          --logger "trx;LogFileName=results.trx"
+        if: runner.os != 'Windows'
 
       - name: Upload coverage
         uses: codecov/codecov-action@v4
