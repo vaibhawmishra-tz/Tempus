@@ -25,7 +25,7 @@
     <RepositoryType>git</RepositoryType>
     <PackageTags>datetime;timezone;dst;utc;business-days;dotnet;csharp</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <!-- Icon can be added later: <PackageIcon>icon.png</PackageIcon> -->
+    <PackageIcon>icon.png</PackageIcon>
 
     <!-- Source Link: enables step-through debugging into Tempus source -->
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
@@ -39,6 +39,12 @@
     <Deterministic>true</Deterministic>
     <ContinuousIntegrationBuild Condition="'$(CI)' == 'true'">true</ContinuousIntegrationBuild>
   </PropertyGroup>
+
+  <!-- Include icon and readme in all packages -->
+  <ItemGroup>
+    <None Include="..\..\icon.png" Pack="true" PackagePath="\" />
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
 
   <!-- Analyzers applied to every project in the solution -->
   <ItemGroup>
